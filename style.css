@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+:root {
+    --primary-color: #101014;
+    --secondary-color: #24232a;
+    --accent-color: #a5ffaf;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", "Roboto", "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #595765;
+}
+
+.screen {
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+#passwordDiv {
+    font-family: "Cascadia Code", monospace;
+}
+
+.config-div, .checks {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: var(--secondary-color);
+}
+
+.config-div {
+    padding: 1rem;
+}
+
+.len-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+span#passwordLength {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input {
+    accent-color: var(--accent-color);
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.input-row {
+    display: flex;
+    gap: .5rem;
+}
+
+button#generateBtn {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button#copyBtn {
+    color: var(--accent-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
